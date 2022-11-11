@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AdminEnroll from "./pages/AdminEnroll";
+import AdminMain from "./pages/AdminMain";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{ backgroundColor: "#EFEFEF", overflow: "auto", height: "100vh" }}
+    >
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<AdminMain />}></Route>
+          <Route path="/enroll" element={<AdminEnroll />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
-
 export default App;
