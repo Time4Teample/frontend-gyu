@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AdminEnroll from "./pages/AdminEnroll";
 import AdminMain from "./pages/AdminMain";
 
+
 function App() {
   return (
     <div
@@ -17,3 +18,4 @@ function App() {
   );
 }
 export default App;
+
