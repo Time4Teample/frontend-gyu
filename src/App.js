@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Main from "./pages/Main";
+import AdminEnroll from "./pages/AdminEnroll";
+import AdminMain from "./pages/AdminMain";
+
 
 function App() {
   return (
@@ -8,10 +10,12 @@ function App() {
     >
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Main />}></Route>
+          <Route path="/" element={<AdminMain />}></Route>
+          <Route path="/enroll" element={<AdminEnroll />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
   );
 }
 export default App;
+
