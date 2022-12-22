@@ -1,7 +1,6 @@
 import React from "react";
 import Drawer from "../components/Drawer";
 import UrlTextField from "../components/UrlTextField";
-import HTMLTextField from "../components/HtmlTextField";
 import Popup from "../components/Popup";
 import { Box, Button, Typography } from '@mui/material';
 import { borderRadius } from "@mui/system";
@@ -51,7 +50,6 @@ function AdminEnroll() {
                                 justifycontent: 'space-around'}}>
 
                     <UrlTextField/>
-                    <HTMLTextField/>
                    
                 </div></>
                 <><div style={{  display: 'flex',
