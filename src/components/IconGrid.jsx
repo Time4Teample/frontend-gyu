@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid';
 import FormLabel from '@mui/material/FormLabel';
 import FormControl from '@mui/material/FormControl';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import HighlightedCode from 'docs/src/modules/components/HighlightedCode';
+// import HighlightedCode from 'docs/src/modules/components/HighlightedCode';
 import RadioGroup from '@mui/material/RadioGroup';
 import Radio from '@mui/material/Radio';
 import Paper from '@mui/material/Paper';
@@ -63,7 +63,7 @@ export default function SpacingGrid() {
             </Grid>
           </Grid>
         </Paper>
-        <HighlightedCode code={jsx} language="jsx" />
+        {/* <HighlightedCode code={jsx} language="jsx" /> */}
       </Grid>
     </Grid>
   );

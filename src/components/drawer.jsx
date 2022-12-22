@@ -18,7 +18,6 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 // import InboxIcon from '@mui/icons-material/MoveToInbox';
 // import MailIcon from '@mui/icons-material/Mail';
-
 const drawerWidth = 240;
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
@@ -124,7 +123,7 @@ export default function PersistentDrawerLeft() {
         <List>
           {['강좌 등록'].map((text, index) => (
             <ListItem key={text} disablePadding>
-              <a href="http://localhost:3000/administrator" target="_blank" style={ { textDecoration: 'none' , color: '#000000' } }>
+              <a href="http://localhost:3000/enroll" target="_blank" style={ { textDecoration: 'none' , color: '#000000' } }>
                 <ListItemButton>
                   <ListItemText primary={text} />
                 </ListItemButton>
