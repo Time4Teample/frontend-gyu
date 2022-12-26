@@ -14,12 +14,12 @@ const columns = [
 ];
 
 const rows = [
-  { id: 1, instructor: '김주원', className: '쭈워니 노래교실', classFee: 50000 },
+  { id: 1, instructor: '최필규', className: '하프 배우기', classFee: 50000 },
   { id: 2, instructor: '야망남', className: '야망남 댄스교실', classFee: 30000 },
   { id: 3, instructor: '최현정', className: '현정이 롤체교실', classFee: 100000 },
   { id: 4, instructor: '김인철', className: '인철이 박스교실', classFee: 100 },
   { id: 5, instructor: '홍성민', className: '성미니 음주교실', classFee: 50000 },
-  { id: 6, instructor: 'Melisandre', className: null, classFee: 150 },
+  { id: 6, instructor: 'Melisandre', className: "Lamborgihni", classFee: 150 },
   { id: 7, instructor: 'Clifford', className: 'Ferrara', classFee: 44 },
   { id: 8, instructor: 'Frances', className: 'Rossini', classFee: 36 },
   { id: 9, instructor: 'Roxie', className: 'Harvey', classFee: 65 },

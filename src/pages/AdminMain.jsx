@@ -7,8 +7,7 @@ import img1 from "../assets/images/enroll.png"
 import img2 from "../assets/images/check.png"
 import img3 from "../assets/images/logout.png"
 import { borderRadius } from "@mui/system";
-
-
+import MainMap from "../components/MainMap";
 
 function AdminMain() {
     return (
@@ -160,8 +159,8 @@ function AdminMain() {
                     로그아웃
                 </Typography>
             </div>
+            <MainMap></MainMap>
         </div></>
-        
         </Box>
     );
 }
