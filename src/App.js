@@ -1,11 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AdminMain from "./pages/AdminMain";
-// import ClassManage from "./pages/ClassManage";
 import ClassRegister from "./pages/ClassRegister";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AdminEnroll from "./pages/AdminEnroll";
-import AdminMain from "./pages/AdminMain";
+
 
 
 export function App() {
