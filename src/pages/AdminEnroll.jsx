@@ -41,26 +41,30 @@ function AdminEnroll() {
                         강좌를 등록하세요
                      </Typography>
                </div>
-               <><div style={{  display: 'flex',
+               <div style={{  display: 'flex',
                                 flexDirection: 'column', 
-                                rowGap: '100px', 
-                                marginTop: '100px',
+                                // marginTop: '100px',
                                 marginInlineStart:'167px', 
                                 marginInlineEnd: '118px', 
                                 justifycontent: 'space-around'}}>
 
-                    <UrlTextField/>
+                    강좌명: <UrlTextField props="강좌명을 입력하세요!"/>
+                    강사: <UrlTextField props="강사를 입력하세요!"/>
+                    장소: <UrlTextField props="장소를 입력하세요!"/>
+                    강좌비: <UrlTextField props="강좌비를 입력하세요!"/>
+                    세부 정보 URL: <UrlTextField props="URL을 입력하세요!"/>
                    
-                </div></>
-                <><div style={{  display: 'flex',
+                </div>
+            <div style={{  display: 'flex',
                                 flexDirection: 'column', 
                                 rowGap: '100px', 
-                                marginTop: '100px',
+                                // marginTop: '100px',
                                 marginInlineStart:'600px', 
                                 marginInlineEnd: '118px', 
                                 justifycontent: 'center'}}>   
                 <Popup/>
-                </div></>
+            </div>
+            
         </Box>
     );
 }

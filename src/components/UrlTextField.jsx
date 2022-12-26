@@ -19,10 +19,11 @@ function MyFormHelperText() {
 }
 
 export default function UseFormControl() {
+
   return (
-    <Box component="form" noValidate autoComplete="off" sx={{ width: '964px', height: '85px'}}>
-      <FormControl fullWidth sx={{ width: '964px', height: '85px' }} style={{ backgroundColor: "#FFFFFF" , borderColor: "#FFFFFF"}}>
-        <OutlinedInput placeholder="URL을 입력해주세요" />
+    <Box component="form" noValidate autoComplete="off" sx={{ width: '964px', height: '100px'}}>
+      <FormControl fullWidth sx={{ width: '964px', height: '55px' }} style={{ backgroundColor: "#FFFFFF" , borderColor: "#FFFFFF"}}>
+        <OutlinedInput />
         <MyFormHelperText />
       </FormControl>
     </Box>
