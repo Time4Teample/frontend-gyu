@@ -98,22 +98,24 @@ function AdminMain() {
                           flexDirection: 'column', 
                           justifycontent: 'space-around',
                           textAlign: 'center' }}>
-                <Button>
-                <Box sx={{
-                    display: 'flex',
-                    flexDirection:'row',
-                    justifyContent: 'center',
-                    padding: '44px 40px',
-                    gap: '10px',
-                    width: '259px',
-                    height: '253px',
-                    backgroundColor: '#FFFFFF',
-                    borderRadius: '30px'
+                <a href="http://localhost:3000/class/register" target="_blank" style={ { textDecoration: 'none' , color: '#000000' } }>
+                    <Button>
+                    <Box sx={{
+                        display: 'flex',
+                        flexDirection:'row',
+                        justifyContent: 'center',
+                        padding: '44px 40px',
+                        gap: '10px',
+                        width: '259px',
+                        height: '253px',
+                        backgroundColor: '#FFFFFF',
+                        borderRadius: '30px'
 
-                }}>
-                    <img src={img2} />
-                </Box>
-                </Button>
+                    }}>
+                        <img src={img2} />
+                    </Box>
+                    </Button>
+                </a>
                 <Typography sx={{
                     width: '235px',
                     height: '73px',
