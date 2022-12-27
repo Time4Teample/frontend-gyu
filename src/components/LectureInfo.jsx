@@ -1,117 +1,49 @@
 // import { File } from "@components";
 import React from "react";
 import styled from "styled-components";
-import { useParams } from "react-router-dom";
-// import UserPhoto from "../../components/UserPhoto";
-import Typography from "./Typography";
-import InterestButton from "./InterestButton";
 
-const TestDIV = styled.div`
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  overflow: hidden;
-`;
 
 function LectureInfo() {
-  const { tempName } = useParams();
-
-  //현재 받아올 값이 없으므로 유저 정보를 임의로 입력해둠
-  const users = [
-    {
-      id: 1,
-      lecturename: "재즈",
-      time: "3시부타 4시",
-      teacher: "가나다 강사",
-      price: "5000",
-    },
-    {
-      id: 2,
-      lecturename: "음악",
-      time: "3시부타 4시",
-      teacher: "가나다 강사",
-      price: "5000",
-    },
-    {
-      id: 3,
-      lecturename: "가요",
-      time: "3시부타 4시",
-      teacher: "가나다 강사",
-      price: "5000",
-    },
-  ];
-
-  // secialId는 해당 사이트에 점속한 유저의 ID라 가정하여 임의로 입력해둠
-  const specialId = 1;
-
-  // speicialId에 해당하는 유저의 정보를 가져옴
-  function findUserInfo(element) {
-    if (element.id === specialId) {
-      return true;
-    }
-  }
-  const Info = users.find(findUserInfo);
-  //end(임의로 유저정보 입력해둠)
-
   return (
-    <>
-      {/* <Box //흰색 배경
-        width="600px"
-        height="250px"
-        borderRadius="5px"
-        backgroundColor="white"
-      > */}
-      <div
-        style={{
-          display: "flex",
-          width: "600px",
-          height: "250px",
-          backgroundColor: "white",
-          borderRadius: "5px",
-        }}
-      >
-        {/* <UserPhoto /> */}
-        <div style={{ marginLeft: "15px", width: "285px" }}>
-          {/* spcialId에 해당하는 유저의 정보들 출력 */}
-          <Typography marginBottom="5px" size="40px">
-            {Info.lecturename}
-          </Typography>
-          <Typography marginBottom="5px" size="20px">
-            강의시간 : {Info.time}
-          </Typography>
-          <Typography marginBottom="5px" size="20px">
-            강사명 : {Info.teacher}
-          </Typography>
-          <Typography marginBottom="5px" size="20px">
-            비용 : {Info.price}
-          </Typography>
-          {/* Follow 버튼 */}
-          <InterestButton
-            color="#006600"
-            width="85px"
-            height="33px"
-            borderRadius="5px"
-            textcolor="white"
-          >
-            {" "}
-            신청하기{" "}
-          </InterestButton>
-          <InterestButton
-            color="#CC0000"
-            width="85px"
-            height="33px"
-            borderRadius="5px"
-            marginLeft="10px"
-            textcolor="white"
-          >
-            {" "}
-            취소하기{" "}
-          </InterestButton>
-        </div>
+    <div className="overlaybox">
+      <a href="https://www.snart.or.kr/web/academy/view?MENUMST_ID=22012&SNA_ACADEMY_CATEGORY_IDX=26&SNA_ACADEMY_LECTURE_IDX=10291" className="close">
+      <div className="boxtitle">성남 아트센터</div>
+      </a>
+      <div className="first">
+        <div className="triangle text">1</div>
+        <div className="movietitle text">미술애호가 및 콜렉터 과정(정규강좌)</div>
       </div>
-      {/* </Box> */}
-      {/* <File open={true} /> */}
-    </>
+      <ul>
+      <a href="https://www.snart.or.kr/web/academy/view?MENUMST_ID=22012&SNA_ACADEMY_CATEGORY_IDX=27&SNA_ACADEMY_LECTURE_IDX=10271" className="close">
+        <li className="up">
+          <span className="number">2</span>
+          <span className="title">바이올린 A(저녁)</span>
+          <span className="count">300,000원</span>
+        </li>
+        </a>
+        <a href="https://www.snart.or.kr/web/academy/view?MENUMST_ID=22012&SNA_ACADEMY_CATEGORY_IDX=27&SNA_ACADEMY_LECTURE_IDX=10278" className="close">
+        <li className="up">
+          <span className="number">3</span>
+          <span className="title">수묵 채색화</span>
+          <span className="count">300,000원</span>
+        </li>
+        </a>
+        <a href="https://www.snart.or.kr/web/academy/view?MENUMST_ID=22012&SNA_ACADEMY_CATEGORY_IDX=26&SNA_ACADEMY_LECTURE_IDX=10262" className="close">
+        <li className="up">
+          <span className="number">4</span>
+          <span className="title">오페라 살롱 (정규강좌)</span>
+          <span className="count">180,000원</span>
+        </li>
+        </a>
+        <a href="https://www.snart.or.kr/web/academy/view?MENUMST_ID=22012&SNA_ACADEMY_CATEGORY_IDX=26&SNA_ACADEMY_LECTURE_IDX=10261" className="close">
+        <li className="up">
+          <span className="number">5</span>
+          <span className="title">오페라 살롱 (베르디 vs 바그너)</span>
+          <span className="count">30,000원</span>
+        </li>
+        </a>
+      </ul>
+    </div>
   );
 }
 
